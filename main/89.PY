@@ -234,23 +234,25 @@ if __name__ == "__main__":
 
         elif'shutdown'in query:
             speak("ok sir the system is shutdown in")
+            os.system("shutdown -s -t 5")
             speak("5")
             speak("4")
             speak("3")
             speak("2")
             speak("1")
             speak("0")
-            os.system("shutdown /s /t l") 
+             
         
         elif'restart'in query:
             speak("ok sir the system is restart in")
+            os.system("shutdown -r -t 5") 
             speak("5")
             speak("4")
             speak("3")
             speak("2")
             speak("1")
             speak("0")
-            os.system("shutdown /r /t l") 
+            
         
         elif'thank you' in query:
             speak(f"no problem sparsh")
